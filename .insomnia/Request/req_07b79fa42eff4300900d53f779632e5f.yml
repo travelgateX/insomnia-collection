@@ -1,0 +1,41 @@
+_id: req_07b79fa42eff4300900d53f779632e5f
+type: Request
+parentId: fld_ac2f1d1d6eb641e4856eefe2ee26f845
+modified: 1677673840187
+created: 1677574072514
+url: "{{ _['Travelgate base_URI'] }}"
+name: Retrieve audits
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query RetrieveAudits($filter: LoggingLegacyFilterInput!)
+    {\n\tlogging {\n\t\tretrieveStats(filter: $filter) {\n\t\t\tedges
+    {\n\t\t\t\tnode {\n\t\t\t\t\tadviseMessage
+    {\n\t\t\t\t\t\tdescription\n\t\t\t\t\t}\n\t\t\t\t\tLoggingLegacyData
+    {\n\t\t\t\t\t\turl\n\t\t\t\t\t}\n\t\t\t\t\tcreatedAt\n\t\t\t\t\tLoggingLegacyData
+    {\n\t\t\t\t\t\ttimestamp\n\t\t\t\t\t\tcode\n\t\t\t\t\t\taccess
+    {\n\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\taccessData
+    {\n\t\t\t\t\t\t\t\tname\n\t\t\t\t\t\t\t\tsupplier
+    {\n\t\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\tclient
+    {\n\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\tclientData
+    {\n\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\tname\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}\n","operationName":"RetrieveAudits","variables":{"filter":{"from":"2022-06-21
+    00:00:00","to":"2022-06-21 12:00:00","requestMode":"{{ _.Mode
+    }}","apiCode":"hotel","operationTypes":"SEARCH","accessCodes":""}}}'
+parameters: []
+headers:
+  - name: Authorization
+    value: "{{ _['Authorization Apikey'] }}"
+  - name: Content-Type
+    value: application/json
+  - name: Accept-Encoding
+    value: gzip
+authentication: {}
+metaSortKey: -999999937.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

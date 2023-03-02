@@ -1,0 +1,42 @@
+_id: req_557b73fd30f741c79c022b96156395d9
+type: Request
+parentId: fld_b9d29867cfda448998627985aadcb6c8
+modified: 1677757289428
+created: 1677574064403
+url: "{{ _['Travelgate base_URI'] }}"
+name: GetStats
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query ($where:
+    TrafficOptimizationAggregationStatsConnectionWhereInput!)
+    {\n\ttrafficOptimization
+    {\n\t\tgetTrafficOptimizationAggregationStats(where: $where)
+    {\n\t\t\tadviseMessage
+    {\n\t\t\t\tcode\n\t\t\t\tdescription\n\t\t\t}\n\t\t\tedges {\n\t\t\t\tnode
+    {\n\t\t\t\t\taggregationData {\n\t\t\t\t\t\taccess
+    {\n\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t}\n\t\t\t\t\t\tbuyer
+    {\n\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t}\n\t\t\t\t\t\tseller
+    {\n\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t}\n\t\t\t\t\t\thits\n\t\t\t\t\t\tblacklist_type\n\t\t\t\t\t\tsupplier
+    {\n\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t}\n\t\t\t\t\t\ttotalTime\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}\n","variables":{"where":{"mode":"{{
+    _.Mode
+    }}","buyer_in":[""],"seller_in":[""],"groupBy":{"data":"BLACKLIST_TYPE","time":"HOUR"},"timeRange":{"absolute":{"from":"2022-12-21
+    15:04:05","to":"2022-12-21 16:04:05"}}}}}'
+parameters: []
+headers:
+  - name: Authorization
+    value: "{{ _['Travelgate base_URI'] }}"
+  - name: Content-Type
+    value: application/json
+  - name: Accept-Encoding
+    value: gzip
+authentication: {}
+metaSortKey: -1667814470488.8438
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

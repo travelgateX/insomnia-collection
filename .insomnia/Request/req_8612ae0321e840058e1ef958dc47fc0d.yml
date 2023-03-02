@@ -1,0 +1,76 @@
+_id: req_8612ae0321e840058e1ef958dc47fc0d
+type: Request
+parentId: fld_fdc6de0083cc43519442d6d2b8ae6e8c
+modified: 1677747762073
+created: 1677574081044
+url: "{{ _['Travelgate base_URI'] }}"
+name: Alerts-Query
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query getAlerts {\n  alertsX {\n    alerts(criteria:
+    {codes:[\"\"]}) {\n      totalCount\n      edges {\n        node
+    {\n          adviseMessage
+    {\n            code\n            description\n            level\n            __typename\n          }\n          updatedAt\n          alertData
+    {\n            isActive\n            code\n            name\n            description\n            editor
+    {\n              code\n              __typename\n            }\n            group
+    {\n              code\n              __typename\n            }\n         \n            configuration
+    {\n              alertType\n              mode\n              windowType\n              comercialType\n              timesToRecovery\n              timesToAlert\n              periodicity\n              window\n              minNumberRequests\n              percentageToAlert\n              variation\n              offset\n              historicalWindow\n              noRecoveries\n              stateChangesOnly\n              groupBy\n              typeConfiguration
+    {\n                toCheck\n                __typename\n              }\n              HS_inclusive:
+    hubStatus(isInclusive: true)\n              EC_inclusive:
+    errorCode(isInclusive: true)\n              ET_inclusive:
+    errorType(isInclusive: true)\n              AO_inclusive:
+    alertObjects(isInclusive: true)
+    {\n                __typename\n                ... on Access
+    {\n                  code\n                  __typename\n                }\n                ...
+    on Client {\n                  code\n                  clientData
+    {\n                    name\n                    __typename\n                  }\n                  __typename\n                }\n                ...
+    on Supplier
+    {\n                  code\n                  __typename\n                }\n                ...
+    on Operation
+    {\n                  code\n                  __typename\n                }\n                ...
+    on Group
+    {\n                  code\n                  __typename\n                }\n                ...
+    on API
+    {\n                  code\n                  __typename\n                }\n              }\n              HS_exclusive:
+    hubStatus(isInclusive: false)\n              EC_exclusive:
+    errorCode(isInclusive: false)\n              ET_exclusive:
+    errorType(isInclusive: false)\n              AO_exclusive:
+    alertObjects(isInclusive: false)
+    {\n                __typename\n                ... on Access
+    {\n                  code\n                  __typename\n                }\n                ...
+    on Client {\n                  code\n                  clientData
+    {\n                    name\n                    __typename\n                  }\n                  __typename\n                }\n                ...
+    on Supplier
+    {\n                  code\n                  __typename\n                }\n                ...
+    on Operation
+    {\n                  code\n                  __typename\n                }\n                ...
+    on Group
+    {\n                  code\n                  __typename\n                }\n                ...
+    on API
+    {\n                  code\n                  __typename\n                }\n              }\n              notifications
+    {\n                emails
+    {\n                  isActive\n                  to: email(type:
+    TO)\n                  bcc: email(type:
+    BCC)\n                  __typename\n                }\n                slack
+    {\n                  isActive\n                  webHook\n                  advancedOptions
+    {\n                    titles
+    {\n                      ok\n                      alerting\n                      __typename\n                    }\n                    short\n                    icon\n                    username\n                    channel\n                    __typename\n                  }\n                  __typename\n                }\n                __typename\n              }\n              __typename\n            }\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}","operationName":"getAlerts"}'
+parameters: []
+headers:
+  - name: Authorization
+    value: "{{ _['Authorization Apikey'] }}"
+  - name: Content-Type
+    value: application/json
+  - name: Accept-Encoding
+    value: gzip
+authentication: {}
+metaSortKey: -1677572734835
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

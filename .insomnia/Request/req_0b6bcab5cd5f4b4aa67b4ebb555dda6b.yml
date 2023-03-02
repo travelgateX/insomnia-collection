@@ -1,0 +1,45 @@
+_id: req_0b6bcab5cd5f4b4aa67b4ebb555dda6b
+type: Request
+parentId: fld_ac2f1d1d6eb641e4856eefe2ee26f845
+modified: 1677673837181
+created: 1677574072502
+url: "{{ _['Travelgate base_URI'] }}"
+name: Get audit from access
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query logging($where: AuditRuleWhereInput!) {\n\tlogging
+    {\n\t\tallAuditRules(where: $where) {\n\t\t\tedges {\n\t\t\t\tnode
+    {\n\t\t\t\t\tcode\n\t\t\t\t\tauditRuleData {\n\t\t\t\t\t\taccess
+    {\n\t\t\t\t\t\t\taccessData
+    {\n\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\tname\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\tsupplier
+    {\n\t\t\t\t\t\t\tsupplierData
+    {\n\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\tname\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\tclient
+    {\n\t\t\t\t\t\t\tclientData
+    {\n\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\tname\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\tbuyer
+    {\n\t\t\t\t\t\t\torganizationData
+    {\n\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\tseller
+    {\n\t\t\t\t\t\t\torganizationData
+    {\n\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\tcreatedAt\n\t\t\t\t\tupdatedAt\n\t\t\t\t\tadviseMessage
+    {\n\t\t\t\t\t\tcode\n\t\t\t\t\t\tdescription\n\t\t\t\t\t\tlevel\n\t\t\t\t\t\texternal
+    {\n\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\tmessage\n\t\t\t\t\t\t}\n\t\t\t\t\t\tcorrelationID\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}\n","operationName":"logging","variables":{"where":{"product":"legacy","auditStatus":"InProcess"}}}'
+parameters: []
+headers:
+  - name: Authorization
+    value: "{{ _['Authorization Apikey'] }}"
+  - name: Accept-Encoding
+    value: gzip
+  - name: Content-Type
+    value: application/json
+  - name: TGX-Correlation-Id
+    value: ""
+authentication: {}
+metaSortKey: -999999900
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

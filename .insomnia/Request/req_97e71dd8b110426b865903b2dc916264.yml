@@ -1,0 +1,48 @@
+_id: req_97e71dd8b110426b865903b2dc916264
+type: Request
+parentId: fld_ac2f1d1d6eb641e4856eefe2ee26f845
+modified: 1677673838886
+created: 1677574072525
+url: "{{ _['Travelgate base_URI'] }}"
+name: Get audit from connection
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query getAudit($where: AuditRuleConnectionWhereInput!)
+    {\n\tlogging {\n\t\tallConnectionAuditRules(where: $where) {\n\t\t\tedges
+    {\n\t\t\t\tnode {\n\t\t\t\t\tadviseMessage
+    {\n\t\t\t\t\t\tcode\n\t\t\t\t\t\tdescription\n\t\t\t\t\t\tlevel\n\t\t\t\t\t\texternal
+    {\n\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t}\n\t\t\t\t\t\tcorrelationID\n\t\t\t\t\t\t__typename\n\t\t\t\t\t}\n\t\t\t\t\tcode\n\t\t\t\t\tcreatedAt\n\t\t\t\t\tauditRuleData
+    {\n\t\t\t\t\t\tproduct
+    {\n\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t}\n\t\t\t\t\t\taccess
+    {\n\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t}\n\t\t\t\t\t\tbuyer
+    {\n\t\t\t\t\t\t\torganizationData
+    {\n\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t}\n\t\t\t\t\t\tseller
+    {\n\t\t\t\t\t\t\torganizationData
+    {\n\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t__typename\n\t\t\t\t\t\t}\n\t\t\t\t\t\tttl\n\t\t\t\t\t\tpercentageToAudit\n\t\t\t\t\t\t__typename\n\t\t\t\t\t}\n\t\t\t\t\t__typename\n\t\t\t\t}\n\t\t\t\t__typename\n\t\t\t}\n\t\t\t__typename\n\t\t}\n\t\t__typename\n\t}\n}\n","operationName":"getAudit","variables":{"where":{"product":"legacy","auditStatus":"Finalized","owner":"","mode":"{{
+    _.Mode }}"}}}'
+parameters: []
+headers:
+  - name: Authorization
+    value: "{{ _['Authorization Apikey'] }}"
+    id: pair_45668d2c762a47e0b234076bfb24a258
+  - name: Content-Type
+    value: application/json
+    id: pair_7ce27deea3b948509a1ac8c0a72ed9df
+  - name: TGX-Correlation-Id
+    value: ""
+    id: pair_267888d861ce42b4bb7171d704901680
+  - id: pair_ea64b816b61145e1912849613c4821f0
+    name: Accept-Encoding
+    value: gzip
+    description: ""
+authentication: {}
+metaSortKey: -999999925
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,61 @@
+_id: req_708b966968e447068c6b859ed1b945ab
+type: Request
+parentId: fld_e6f7a8945ee7488b8557593a415ec2df
+modified: 1677674003957
+created: 1677574054848
+url: "{{ _['Travelgate base_URI'] }}"
+name: Speed-query
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query GetSpeed($where: SpeedConnectionCollectionWhereInput!)
+    {\n\tspeed {\n\t\tspeedConnectionCollection(where: $where)
+    {\n\t\t\tadviseMessage
+    {\n\t\t\t\tcode\n\t\t\t\tdescription\n\t\t\t\tlevel\n\t\t\t\texternal
+    {\n\t\t\t\t\tcode\n\t\t\t\t\tmessage\n\t\t\t\t}\n\t\t\t\tcorrelationID\n\t\t\t}\n\t\t\tedges
+    {\n\t\t\t\tnode {\n\t\t\t\t\tspeedConnectionData
+    {\n\t\t\t\t\t\tconfiguration {\n\t\t\t\t\t\t\tttl
+    {\n\t\t\t\t\t\t\t\tvalue\n\t\t\t\t\t\t\t\tfrom\n\t\t\t\t\t\t\t\tto\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\trqMode\n\t\t\t\t\t\t}\n\t\t\t\t\t\taccesses
+    {\n\t\t\t\t\t\t\tedges {\n\t\t\t\t\t\t\t\tnode
+    {\n\t\t\t\t\t\t\t\t\tspeedAccessData {\n\t\t\t\t\t\t\t\t\t\tconfiguration
+    {\n\t\t\t\t\t\t\t\t\t\t\tttl
+    {\n\t\t\t\t\t\t\t\t\t\t\t\tvalue\n\t\t\t\t\t\t\t\t\t\t\t\tfrom\n\t\t\t\t\t\t\t\t\t\t\t\tto\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\tadviseMessage
+    {\n\t\t\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\t\t\tdescription\n\t\t\t\t\t\t\t\t\t\tlevel\n\t\t\t\t\t\t\t\t\t\texternal
+    {\n\t\t\t\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\t\t\t\tmessage\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tcorrelationID\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\tbuyer
+    {\n\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\torganization
+    {\n\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\tseller
+    {\n\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\torganization
+    {\n\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\taccesses
+    {\n\t\t\t\t\t\t\tadviseMessage
+    {\n\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\tdescription\n\t\t\t\t\t\t\t\tlevel\n\t\t\t\t\t\t\t\texternal
+    {\n\t\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\t\tmessage\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\tcorrelationID\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tadviseMessage
+    {\n\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\tdescription\n\t\t\t\t\t\t\t\tlevel\n\t\t\t\t\t\t\t\texternal
+    {\n\t\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\t\tmessage\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\tcorrelationID\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tedges
+    {\n\t\t\t\t\t\t\t\tnode {\n\t\t\t\t\t\t\t\t\tspeedAccessData
+    {\n\t\t\t\t\t\t\t\t\t\taccess {\n\t\t\t\t\t\t\t\t\t\t\taccessData
+    {\n\t\t\t\t\t\t\t\t\t\t\t\tsupplier
+    {\n\t\t\t\t\t\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\t\t\t\t\t\tsupplierData
+    {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tconfiguration
+    {\n\t\t\t\t\t\t\t\t\t\t\tttl
+    {\n\t\t\t\t\t\t\t\t\t\t\t\tvalue\n\t\t\t\t\t\t\t\t\t\t\t\tfrom\n\t\t\t\t\t\t\t\t\t\t\t\tto\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\tactive\n\t\t\t\t\t\t\t\t\t\t\trqMode\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\tadviseMessage
+    {\n\t\t\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\t\t\tdescription\n\t\t\t\t\t\t\t\t\t\tlevel\n\t\t\t\t\t\t\t\t\t\texternal
+    {\n\t\t\t\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\t\t\t\tmessage\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tcorrelationID\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}\n","operationName":"GetSpeed","variables":{"where":{"mode":"{{
+    _.Mode }}","orgBuyerCode":"","orgSellerCode":""}}}'
+parameters: []
+headers:
+  - name: Authorization
+    value: "{{ _['Travelgate base_URI'] }}"
+  - name: Content-Type
+    value: application/json
+  - name: Accept-Encoding
+    value: gzip
+authentication: {}
+metaSortKey: -1677572734872.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

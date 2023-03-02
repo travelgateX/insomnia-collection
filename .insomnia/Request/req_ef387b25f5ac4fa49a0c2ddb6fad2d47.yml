@@ -1,0 +1,41 @@
+_id: req_ef387b25f5ac4fa49a0c2ddb6fad2d47
+type: Request
+parentId: fld_e2545fa003a24b40814cd7973ea63875
+modified: 1677752867787
+created: 1677574064470
+url: "{{ _['Travelgate base_URI'] }}"
+name: TO HotelX
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query TO($where: TrafficOptimizationConnectionWhereInput!)
+    {\n\ttrafficOptimization {\n\t\tallTrafficOptimizationConnections(where:
+    $where) {\n\t\t\tedges {\n\t\t\t\tnode
+    {\n\t\t\t\t\ttrafficOptimizationConnectionData {\n\t\t\t\t\t\tconfiguration
+    {\n\t\t\t\t\t\t\tbyAccess\n\t\t\t\t\t\t}\n\t\t\t\t\t\taccesses
+    {\n\t\t\t\t\t\t\tedges {\n\t\t\t\t\t\t\t\tnode
+    {\n\t\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\t\ttrafficOptimizationAccessData
+    {\n\t\t\t\t\t\t\t\t\t\tconfiguration
+    {\n\t\t\t\t\t\t\t\t\t\t\tisActive\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\taccess
+    {\n\t\t\t\t\t\t\t\t\t\t\tcode\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\tadviseMessage
+    {\n\t\t\t\tcode\n\t\t\t\tdescription\n\t\t\t\tlevel\n\t\t\t\tcorrelationID\n\t\t\t}\n\t\t}\n\t}\n}\n","operationName":"TO","variables":{"where":{"mode":"{{
+    _.Mode
+    }}","organizationBuyerCode":"","accessCode_in":[""],"criterias":["NO_AVAIL"]}}}'
+parameters: []
+headers:
+  - name: Authorization
+    value: "{{ _['Authorization Apikey'] }}"
+  - name: Content-Type
+    value: application/json
+  - name: Accept-Encoding
+    value: gzip
+authentication: {}
+metaSortKey: -1677572734875.625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

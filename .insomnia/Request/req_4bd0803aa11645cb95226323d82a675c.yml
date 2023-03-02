@@ -1,0 +1,37 @@
+_id: req_4bd0803aa11645cb95226323d82a675c
+type: Request
+parentId: fld_b9d29867cfda448998627985aadcb6c8
+modified: 1677757278550
+created: 1677574064496
+url: "{{ _['Travelgate base_URI'] }}"
+name: Get blacklisted Hotels for connection
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query ToStats(\n\t$where:
+    TrafficOptimizationAllAccessesHotelBlacklistStatsWhereInput!\n)
+    {\n\ttrafficOptimization
+    {\n\t\tallTrafficOptimizationAllAccessesHotelBlacklistStats(where: $where)
+    {\n\t\t\tedges {\n\t\t\t\tnode {\n\t\t\t\t\tseller
+    {\n\t\t\t\t\t\tcode\n\t\t\t\t\t}\n\t\t\t\t\tbuyer
+    {\n\t\t\t\t\t\tcode\n\t\t\t\t\t}\n\t\t\t\t\thotels
+    {\n\t\t\t\t\t\thits\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}\n","operationName":"ToStats","variables":{"where":{"mode":"{{
+    _.Mode }}","buyer_in":"","seller_in":""}}}'
+parameters: []
+headers:
+  - name: Authorization
+    value: "{{ _['Authorization Apikey'] }}"
+  - name: Content-Type
+    value: application/json
+  - name: Accept-Encoding
+    value: gzip
+authentication: {}
+metaSortKey: -1667944588084.1875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

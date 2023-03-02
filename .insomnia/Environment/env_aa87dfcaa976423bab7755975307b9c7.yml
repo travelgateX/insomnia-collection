@@ -1,0 +1,14 @@
+_id: env_aa87dfcaa976423bab7755975307b9c7
+type: Environment
+parentId: env_cba03af2e1aaeeff411c94eb12b5da15a9f2e593
+modified: 1677747978051
+created: 1677573148301
+name: TravelgateX environment
+data:
+  Mode: BUYER
+dataPropertyOrder:
+  "&":
+    - Mode
+color: "#0b59de"
+isPrivate: false
+metaSortKey: 1677573148301

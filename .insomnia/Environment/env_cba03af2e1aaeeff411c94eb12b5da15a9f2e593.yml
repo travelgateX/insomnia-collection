@@ -1,0 +1,16 @@
+_id: env_cba03af2e1aaeeff411c94eb12b5da15a9f2e593
+type: Environment
+parentId: wrk_150eda46885f4e3a8d4f3aa14766719b
+modified: 1677749827279
+created: 1677571343952
+name: Base Environment
+data:
+  Travelgate base_URI: https://api.travelgatex.com
+  Authorization Apikey: "Apikey "
+dataPropertyOrder:
+  "&":
+    - Travelgate base_URI
+    - Authorization Apikey
+color: null
+isPrivate: false
+metaSortKey: 1677571343952
